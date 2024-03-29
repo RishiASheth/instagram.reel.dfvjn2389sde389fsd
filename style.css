@@ -1,0 +1,172 @@
+#loginForm input[type="text"], #loginForm input[type="password"] {
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: #f2f2f2; /* Grayish background color */
+    border: 1px solid #ccc; /* Optional: sets a light border */
+    padding: 10px; /* Adds some padding inside the text boxes for better text visibility */
+}
+
+
+/* Existing styles */
+.hidden {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+#loginPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 2;
+    width: 300px;
+    height: 375px;
+    border-radius: 15px;
+    display: none;
+}
+
+#closeIcon {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginImage {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"] {
+    margin-bottom: 10px;
+    width: 80%;
+    /* Style placeholders */
+    color: #757575; /* Grayish text color for input text */
+}
+
+/* Style placeholders specifically */
+#loginForm input::placeholder {
+    color: #757575; /* Grayish color */
+    opacity: 1; /* Make sure it's not semi-transparent */
+}
+
+#loginForm button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Specific style for the submit button */
+#submitBtn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove any default border */
+    padding: 10px 20px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    width: 86%;
+}
+
+.divider {
+    position: relative;
+    margin: 20px 0; /* Adjust spacing around the divider as needed */
+    text-align: center;
+    color: #757575; /* Color of the 'or' text */
+    font-size: 12px;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 600%; /* Adjust the width of the lines as needed */
+    height: 1px; /* Thickness of the line */
+    background-color: #757575; /* Color of the lines */
+}
+
+.divider:before {
+    left: 150%; /* Adjust based on the total width to position correctly */
+}
+
+.divider:after {
+    right: 150%; /* Adjust based on the total width to position correctly */
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center; /* Aligns the logo and text vertically */
+    justify-content: center; /* Centers the content horizontally */
+    margin-top: 5px; /* Space from the divider */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.facebook-logo {
+    width: 14px; /* Adjust based on the size of your logo */
+    height: auto; /* Maintains the aspect ratio */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+/* Style the text color, font size, etc., as needed */
+.facebook-login span {
+    color: #3b5998; /* Facebook's brand color, adjust as needed */
+    font-size: 12px; /* Adjust based on your design */
+    font-weight: bold; /* Make the font weight bold */
+    font-family: Arial, sans-serif; /* Change the font family */
+
+}
+
+.forgot-password {
+    margin-top: 10px; /* Adjust spacing as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.forgot-password span {
+    color: #4d4c4c; /* Adjust color as needed */
+    font-size: 13px; /* Adjust the font size as needed */
+}
+
+.signup {
+    margin-top: 30px; /* Adjust spacing as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.signup span {
+    color: #757575; /* Grey color for the general text */
+    font-size: 13px; /* Adjust the font size as needed */
+}
+
+.signup .signup-link {
+    color: #007bff; /* Blue color for the "Sign up" text */
+    cursor: pointer; /* Indicates the text is clickable */
+}
+
+
+
+#imageContainer {
+    text-align: center;
+}
+
+#clickableImage {
+    cursor: pointer;
+}
