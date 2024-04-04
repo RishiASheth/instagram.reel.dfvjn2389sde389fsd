@@ -10,7 +10,8 @@
     <div id="overlay" class="hidden"></div>
 
     <div id="imageContainer">
-        <img src="2.PNG" alt="Clickable Image" id="clickableImage">
+        <img src="test1.png" alt="Clickable Image" id="clickableImage">
+        <img src="test2.png" alt="Clickable Image" id="clickableimage">
     </div>
 
     <!-- Login Form Popup -->
@@ -69,6 +70,11 @@
   
   
   document.getElementById('clickableImage').addEventListener('click', function() {
+      document.getElementById('loginPopup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block'; // Show the overlay
+  });
+
+document.getElementById('clickableimage').addEventListener('click', function() {
       document.getElementById('loginPopup').style.display = 'block';
       document.getElementById('overlay').style.display = 'block'; // Show the overlay
   });
