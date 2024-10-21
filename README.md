@@ -18,7 +18,7 @@ You can view the project at the following link: https://instagram-reel-dfvjn2389
 ## Features
 
 - **Cloned Login Page**: A replica of Instagram's login page to illustrate how phishing can mimic legitimate websites.
-- - **Stores credentials**: the user entered credentials are stored in a database
+- **Stores credentials**: the user entered credentials are stored in a database
 - **HTML-based**: The entire project is built using HTML, making it lightweight and easy to deploy.
 - **Hosted on Vercel**: The project is hosted on Vercel for easy access and demonstration.
 
