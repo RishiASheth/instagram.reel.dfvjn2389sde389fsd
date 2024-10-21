@@ -2,7 +2,7 @@
 
 ## Project Link
 
-You can view the project at the following link: [Insta-clone Project]([https://your-vercel-project-url.vercel.app](https://instagram-reel-dfvjn2389sde389fsd.vercel.app))
+You can view the project at the following link: https://instagram-reel-dfvjn2389sde389fsd.vercel.app
 ## Overview
 
 **Insta-Copy** is an educational project designed to raise awareness about phishing techniques and the differences between legitimate and phishing websites. This project features a login page that closely resembles Instagram's login interface, demonstrating how easily phishing attacks can be executed. By using this project, users can better understand the importance of online security and how to identify potential phishing attempts.
