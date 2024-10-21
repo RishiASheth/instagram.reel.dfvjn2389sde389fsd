@@ -1,7 +1,5 @@
 # Insta-Copy: Educational Phishing Awareness Project
 
-![Insta-Copy Logo](path_to_your_logo_image) <!-- Add a logo image path if available -->
-
 ## Overview
 
 **Insta-Copy** is an educational project designed to raise awareness about phishing techniques and the differences between legitimate and phishing websites. This project features a login page that closely resembles Instagram's login interface, demonstrating how easily phishing attacks can be executed. By using this project, users can better understand the importance of online security and how to identify potential phishing attempts.
@@ -10,8 +8,6 @@
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Technical Details](#technical-details)
 - [Phishing Awareness](#phishing-awareness)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -26,11 +22,6 @@
 
 To run this project locally, follow these steps:
 
-### Prerequisites
-
-- A web browser (Google Chrome, Firefox, etc.)
-- Internet connection
-
 ### Deployment
 
 1. Clone the repository:
@@ -38,23 +29,8 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/insta-copy.git
    
 2. Navigate to the project directory:
-   ```bash
-   git clone https://github.com/yourusername/insta-copy.git
+   run index.html file
 
-## How to Use
-
-1. Navigate to the login page.
-2. Enter any credentials (the input is not stored).
-3. Observe the UI and how it resembles the legitimate Instagram login page.
-4. Learn about phishing techniques through this simulation.
-
-**Note**: This project is intended for educational purposes only. It is illegal to use this project for malicious activities.
-
-## Technical Details
-
-- **HTML**: The project consists of a single HTML file (`index.html`), which contains all necessary elements for the login page.
-- **CSS**: Styling is applied to match the Instagram aesthetic.
-- **JavaScript**: (Optional) If you decide to add interactive elements or simulations.
 
 ## Phishing Awareness
 
