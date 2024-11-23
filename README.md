@@ -54,9 +54,4 @@ Phishing is a fraudulent attempt to obtain sensitive information, such as userna
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- [Instagram](https://www.instagram.com) for providing inspiration.
-- The web development community for resources and support.
+This project is licensed under the MIT License - see the [LICENSE](LISCENCE.md) for details.
