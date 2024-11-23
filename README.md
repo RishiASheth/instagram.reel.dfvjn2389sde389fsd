@@ -54,4 +54,4 @@ Phishing is a fraudulent attempt to obtain sensitive information, such as userna
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LISCENCE.md) for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) for details.
